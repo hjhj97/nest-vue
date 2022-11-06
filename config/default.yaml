@@ -1,10 +1,10 @@
-server: 
+server:
   port: 3000
-  
-db: 
+
+db:
   type: 'postgres'
   port: 5432
-  database: 'board-app'
+  database: 'post_prac'
 
 jwt:
   expiresIn: 3600

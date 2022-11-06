@@ -32,7 +32,5 @@ export class AuthController {
 
   @Post('/authTest')
   @UseGuards(AuthGuard())
-  authTest(@GetUser() user: User) {
-    console.log(user);
-  }
+  authTest(@GetUser() user: User) {}
 }
