@@ -41,7 +41,6 @@ export class BoardsController {
     @Body() createBoardDto: CreateBoardDto,
     @GetUser() user: User,
   ): Promise<Board> {
-    console.log('post', createBoardDto);
     return this.boardsService.createBoard(createBoardDto, user);
   }
 
